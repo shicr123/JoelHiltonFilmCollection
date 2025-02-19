@@ -125,3 +125,4 @@
 /Users/shirleycruz/RiderProjects/JoelHiltonFilmCollection/JoelHiltonFilmCollection/obj/Debug/net8.0/JoelHiltonFilmCollection.pdb
 /Users/shirleycruz/RiderProjects/JoelHiltonFilmCollection/JoelHiltonFilmCollection/obj/Debug/net8.0/JoelHiltonFilmCollection.genruntimeconfig.cache
 /Users/shirleycruz/RiderProjects/JoelHiltonFilmCollection/JoelHiltonFilmCollection/obj/Debug/net8.0/ref/JoelHiltonFilmCollection.dll
+/Users/shirleycruz/RiderProjects/JoelHiltonFilmCollection/JoelHiltonFilmCollection/obj/Debug/net8.0/JoelHiltonFilmCollection.sourcelink.json
