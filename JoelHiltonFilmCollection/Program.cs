@@ -1,4 +1,4 @@
-using JoelHiltonFilmCollection.Models;
+using Mission6_Cruz.Models;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

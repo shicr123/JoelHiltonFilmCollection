@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JoelHiltonFilmCollection")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41f1bae10d7b2863c99386878c3277535d0cdb98")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85525ddcfb8f9b40eaa3b7757deb433d9c3c5c61")]
 [assembly: System.Reflection.AssemblyProductAttribute("JoelHiltonFilmCollection")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JoelHiltonFilmCollection")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

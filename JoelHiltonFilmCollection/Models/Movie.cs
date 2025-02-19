@@ -1,7 +1,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace JoelHiltonFilmCollection.Models
+namespace Mission6_Cruz.Models
 {
     public class Movie
     {

@@ -1,30 +1,42 @@
+using JoeHiltonFilmCollection.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Mission6_Cruz.Models;
 
-namespace JoelHiltonFilmCollection.Controllers
+namespace Mission6_Cruz.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private FilmCollectionContext _context;
+        public HomeController(FilmCollectionContext temp)
         {
-            _logger = logger;
+            _context = temp;
         }
-
         public IActionResult Index()
         {
-            return View();  // No need to fetch movies here
+            return View();  
+        }
+        public IActionResult GetToKnowJoel()
+        {
+            return View(); 
+        }
+        
+        [HttpGet]
+        public IActionResult AddMovie()
+        {
+            return View(); 
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        public IActionResult AddMovie(Movie movie)
         {
-            return View();
-        }
-
-        public IActionResult Joel()
-        {
-            return View(); // This is for the "Get to Know Joel" page
+            if (ModelState.IsValid)
+            {
+                _context.Movies.Add(movie);
+                _context.SaveChanges();
+                return View("Confirmation", movie);
+            }
+            return View("AddMovie", movie);
         }
     }
 }
