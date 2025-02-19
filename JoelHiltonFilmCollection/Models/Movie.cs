@@ -1,32 +1,25 @@
-
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Mission6_Cruz.Models
 {
     public class Movie
     {
-        public int Id { get; set; }
+        [Key] public int MovieId { get; set; }
 
-        [Required]
-        public string Title { get; set; }
+        [Required] public string Title { get; set; } 
 
-        [Required]
-        public string Category { get; set; }
+        [Required] public string Genre { get; set; } 
 
-        [Required]
-        public string Director { get; set; }
+        [Required] public string Director { get; set; }
 
-        [Required]
-        public int Year { get; set; }
+        [Required] public int ReleaseYear { get; set; }
 
-        [Required]
-        public string Rating { get; set; } // Dropdown (G, PG, PG-13, R)
+        [Required] public string Rating { get; set; } 
 
-        public bool? Edited { get; set; } // Optional Yes/No
+        public bool? Edited { get; set; }
+        public string? LentTo { get; set; }
 
-        public string? LentTo { get; set; } // Optional
-
-        [MaxLength(25)]
-        public string? Notes { get; set; } // Optional, max 25 chars
+        [StringLength(25)] public string? Notes { get; set; }
     }
 }

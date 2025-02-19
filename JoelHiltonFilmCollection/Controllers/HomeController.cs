@@ -1,4 +1,3 @@
-using JoeHiltonFilmCollection.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Mission6_Cruz.Models;
