@@ -29,9 +29,9 @@ namespace Mission6_Cruz.Controllers
         [HttpPost]
         public IActionResult AddMovie(Movie movie)
         {
-                _context.Movies.Add(movie);
-                _context.SaveChanges();
-                return View("Confirmation", movie);
-        }
-    }
+            _context.Movies.Add(movie);
+            _context.SaveChanges();
+            return View("Confirmation", movie);
+         }
+}
 }
