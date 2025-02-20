@@ -29,13 +29,9 @@ namespace Mission6_Cruz.Controllers
         [HttpPost]
         public IActionResult AddMovie(Movie movie)
         {
-            if (ModelState.IsValid)
-            {
                 _context.Movies.Add(movie);
                 _context.SaveChanges();
                 return View("Confirmation", movie);
-            }
-            return View("AddMovie", movie);
         }
     }
 }
