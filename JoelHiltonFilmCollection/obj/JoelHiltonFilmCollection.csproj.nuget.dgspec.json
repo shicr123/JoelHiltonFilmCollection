@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/shirleycruz/RiderProjects/JoelHiltonFilmCollection/JoelHiltonFilmCollection/JoelHiltonFilmCollection.csproj": {}
+    "/Users/shirleycruz/RiderProjects/JoelHiltonFilmCollection/Mission_6NEW/JoelHiltonFilmCollection/JoelHiltonFilmCollection.csproj": {}
   },
   "projects": {
-    "/Users/shirleycruz/RiderProjects/JoelHiltonFilmCollection/JoelHiltonFilmCollection/JoelHiltonFilmCollection.csproj": {
+    "/Users/shirleycruz/RiderProjects/JoelHiltonFilmCollection/Mission_6NEW/JoelHiltonFilmCollection/JoelHiltonFilmCollection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/shirleycruz/RiderProjects/JoelHiltonFilmCollection/JoelHiltonFilmCollection/JoelHiltonFilmCollection.csproj",
+        "projectUniqueName": "/Users/shirleycruz/RiderProjects/JoelHiltonFilmCollection/Mission_6NEW/JoelHiltonFilmCollection/JoelHiltonFilmCollection.csproj",
         "projectName": "JoelHiltonFilmCollection",
-        "projectPath": "/Users/shirleycruz/RiderProjects/JoelHiltonFilmCollection/JoelHiltonFilmCollection/JoelHiltonFilmCollection.csproj",
+        "projectPath": "/Users/shirleycruz/RiderProjects/JoelHiltonFilmCollection/Mission_6NEW/JoelHiltonFilmCollection/JoelHiltonFilmCollection.csproj",
         "packagesPath": "/Users/shirleycruz/.nuget/packages/",
-        "outputPath": "/Users/shirleycruz/RiderProjects/JoelHiltonFilmCollection/JoelHiltonFilmCollection/obj/",
+        "outputPath": "/Users/shirleycruz/RiderProjects/JoelHiltonFilmCollection/Mission_6NEW/JoelHiltonFilmCollection/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/shirleycruz/.nuget/NuGet/NuGet.Config"

@@ -5,21 +5,27 @@ namespace Mission6_Cruz.Models
 {
     public class Movie
     {
+        
         [Key] public int MovieId { get; set; }
-
+        
+        [ForeignKey("CategoryId")]
+        
+        public int? CategoryId { get; set; }
+        
+        public Category Category { get; set; }
         [Required] public string Title { get; set; } 
+        [Required] public int Year { get; set; }
+        public string? Director { get; set; }
 
-        [Required] public string Genre { get; set; } 
+        public string? Rating { get; set; } 
 
-        [Required] public string Director { get; set; }
-
-        [Required] public int ReleaseYear { get; set; }
-
-        [Required] public string Rating { get; set; } 
-
-        public bool? Edited { get; set; }
+        public bool Edited { get; set; }
         public string? LentTo { get; set; }
-
-        [StringLength(25)] public string? Notes { get; set; }
+        
+        [Required]
+        public int CopiedToPlex { get; set; }
+        
+        public string? Notes { get; set; }
+        
     }
 }

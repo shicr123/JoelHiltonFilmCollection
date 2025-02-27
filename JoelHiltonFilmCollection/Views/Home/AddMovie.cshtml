@@ -7,25 +7,55 @@
 <h1>@ViewData["Title"]</h1>
 
 <form method="post">
+    <input type="hidden" asp-for="MovieId" />
+
+    <select asp-for="CategoryId">Category:
+        <option value ="">Select a Category:</option>
+        @*Iterate through each category id and display the category name*@
+        @foreach (Category c in ViewBag.Categories)
+        {
+            <option value="@c.CategoryId">@c.CategoryName</option>
+        }
+    </select>
+    
     <label asp-for="Title">Title:</label>
-    <input asp-for="Title" class="form-control" required />
-    <label asp-for="Genre">Genre:</label>
-    <input asp-for="Genre" class="form-control" required />
+    <input asp-for="Title" class="form-control" required/>
+
+    <label asp-for="Year">Release Year:</label>
+    <input asp-for="Year" type="number" min="1888" required class="form-control" />
+    
     <label asp-for="Director">Director:</label>
-    <input asp-for="Director" class="form-control" required />
-    <label asp-for="ReleaseYear">Release Year:</label>
-    <input asp-for="ReleaseYear" type="number" class="form-control" required />
+    <input asp-for="Director" class="form-control"/>
+
     <label asp-for="Rating">Rating:</label>
     <select asp-for="Rating" class="form-control">
+        <option value="NR">Not Rated</option>
+        <option value="TV-Y7">TV-Y7</option>
         <option value="G">G</option>
+        <option value="TV-G">TV-G</option>
         <option value="PG">PG</option>
+        <option value="TV-PG">TV-PG</option>
         <option value="PG-13">PG-13</option>
+        <option value="TV-14">TV-14</option>
         <option value="R">R</option>
+        <option value="UR"> Unrated</option>
     </select>
+    
     <label asp-for="Edited">Edited:</label>
-    <input asp-for="Edited" class="form-control"/>
+    <select asp-for="Edited" required class="form-control">
+        <option value="false">No</option>
+        <option value="true">Yes</option>
+    </select>
+    
     <label asp-for="LentTo">LentTo:</label>
     <input asp-for="LentTo" class="form-control"/>
+
+    <label asp-for="CopiedToPlex">Copied to Plex:</label>
+    <select asp-for="CopiedToPlex" required class="form-control">
+        <option value="false">No</option>
+        <option value="true">Yes</option>
+    </select>
+    
     <label asp-for="Notes">Notes:</label>
     <input asp-for="Notes" class="form-control"/>
 
